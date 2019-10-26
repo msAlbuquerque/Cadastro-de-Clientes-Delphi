@@ -31,7 +31,7 @@ type
     Menu: TGroupBox;
     btnCadastro: TSpeedButton;
     btnSobre: TSpeedButton;
-    SpeedButton3: TSpeedButton;
+    btnConsulta: TSpeedButton;
     SpeedButton4: TSpeedButton;
     btnSair: TSpeedButton;
     SpeedButton6: TSpeedButton;
@@ -48,6 +48,7 @@ type
     procedure N20Etiquetas1Click(Sender: TObject);
     procedure N30Etiquetas1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnConsultaClick(Sender: TObject);
     
   private
     { Private declarations }
@@ -60,7 +61,7 @@ var
 
 implementation
 
-uses UnitAbout, uCadastro, UnitRelatorio, UnitMD20, UnitMD30;
+uses UnitAbout, uCadastro, UnitRelatorio, UnitMD20, UnitMD30, UnitConsulta;
 
 {$R *.dfm}
 
@@ -117,6 +118,11 @@ procedure TForm1.FormCreate(Sender: TObject);
 begin
   if not Session.IsAlias('Cad_Cli') then
     Session.AddStandardAlias('Cad_Cli','C:\Users\albuq\Desktop\Projetos Delphi 7\Cadastro Clientes\BD','Paradox');
+end;
+
+procedure TForm1.btnConsultaClick(Sender: TObject);
+begin
+  Consulta.ShowModal;
 end;
 
 end.

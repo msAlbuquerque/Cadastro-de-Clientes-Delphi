@@ -1544,7 +1544,7 @@ object Form1: TForm1
       ShowHint = True
       OnClick = btnSobreClick
     end
-    object SpeedButton3: TSpeedButton
+    object btnConsulta: TSpeedButton
       Left = 104
       Top = 32
       Width = 73
@@ -1573,6 +1573,7 @@ object Form1: TForm1
       Layout = blGlyphTop
       NumGlyphs = 2
       ParentFont = False
+      OnClick = btnConsultaClick
     end
     object SpeedButton4: TSpeedButton
       Left = 192
@@ -1681,6 +1682,7 @@ object Form1: TForm1
       Caption = 'Consul&ta'
       object Dados1: TMenuItem
         Caption = '&Dados'
+        OnClick = btnConsultaClick
       end
     end
     object Relatrios1: TMenuItem

@@ -1,10 +1,10 @@
 object Consulta: TConsulta
-  Left = 490
-  Top = 181
+  Left = 488
+  Top = 128
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Consulta'
-  ClientHeight = 505
+  ClientHeight = 519
   ClientWidth = 600
   Color = clNavy
   Font.Charset = DEFAULT_CHARSET
@@ -45,7 +45,7 @@ object Consulta: TConsulta
     Left = 24
     Top = 16
     Width = 553
-    Height = 465
+    Height = 489
   end
   object Panel1: TPanel
     Left = 144
@@ -84,18 +84,33 @@ object Consulta: TConsulta
     VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
     TabOrder = 2
   end
-  object GroupBox1: TGroupBox
+  object RadioGroup1: TRadioGroup
     Left = 40
     Top = 384
-    Width = 521
-    Height = 73
-    Caption = 'Pesquisa'
+    Width = 513
+    Height = 105
+    Caption = 'Pesquisar por'
+    Columns = 5
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWhite
     Font.Height = -13
     Font.Name = 'MS Sans Serif'
     Font.Style = []
+    Items.Strings = (
+      'Codigo'
+      'Nome'
+      'CPF'
+      'CNPJ')
     ParentFont = False
     TabOrder = 3
+    OnClick = RadioGroup1Click
+  end
+  object Edit1: TEdit
+    Left = 64
+    Top = 408
+    Width = 121
+    Height = 21
+    TabOrder = 4
+    OnChange = Edit1Change
   end
 end
