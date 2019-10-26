@@ -4,23 +4,22 @@ uses
   Forms,
   Clientes in 'Clientes.pas' {Form1},
   UnitAbout in 'UnitAbout.pas' {AboutBox},
-  FrameCadastro in 'FrameCadastro.pas' {Cadastro: TFrame},
   uDM in 'uDM.pas' {DM: TDataModule},
   uCadastro in 'uCadastro.pas' {Form2},
   UnitRelatorio in 'UnitRelatorio.pas' {RelCli},
   UnitMD20 in 'UnitMD20.pas' {md20},
-  UnitMD30 in 'UnitMD30.pas' {md21};
+  UnitMD30 in 'UnitMD30.pas' {md30},
+  UnitConsulta in 'UnitConsulta.pas' {Form3};
 
 {$R *.res}
 
 begin
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
-  Application.CreateForm(TAboutBox, AboutBox);
   Application.CreateForm(TDM, DM);
-  Application.CreateForm(TForm2, Form2);
   Application.CreateForm(TRelCli, RelCli);
   Application.CreateForm(Tmd20, md20);
-  Application.CreateForm(Tmd21, md21);
+  Application.CreateForm(Tmd30, md30);
+  Application.CreateForm(TForm3, Form3);
   Application.Run;
 end.

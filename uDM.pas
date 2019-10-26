@@ -3,7 +3,7 @@ unit uDM;
 interface
 
 uses
-  SysUtils, Classes, DB, DBTables;
+  SysUtils, Classes, DB, DBTables, DBIProcs;
 
 type
   TDM = class(TDataModule)
@@ -31,6 +31,7 @@ type
     Table1Telefone_Residencial: TStringField;
     Table1Telefone_Comercial: TStringField;
     Table1Telefone_Celular: TStringField;
+    procedure Table1AfterPost(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -42,6 +43,14 @@ var
 
 implementation
 
+uses BDE;
+
 {$R *.dfm}
+
+procedure TDM.Table1AfterPost(DataSet: TDataSet);
+begin
+  DbiSaveChanges(Table1.Handle);
+  //commit para table DBEAdmin
+end;
 
 end.

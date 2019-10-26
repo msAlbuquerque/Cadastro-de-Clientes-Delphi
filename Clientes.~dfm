@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 117
+  Left = 203
+  Top = 129
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Cadastro de Clientes'
@@ -43,6 +43,7 @@ object Form1: TForm1
   Position = poScreenCenter
   OnClose = FormClose
   OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
   object Bevel1: TBevel
@@ -1477,9 +1478,9 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 1
-    object SpeedButton1: TSpeedButton
+    object btnCadastro: TSpeedButton
       Left = 16
-      Top = 24
+      Top = 32
       Width = 73
       Height = 49
       Hint = 'Incluir, alterar e excluir registros de clientes...'
@@ -1508,7 +1509,7 @@ object Form1: TForm1
       ParentFont = False
       ParentShowHint = False
       ShowHint = True
-      OnClick = SpeedButton1Click
+      OnClick = btnCadastroClick
     end
     object btnSobre: TSpeedButton
       Left = 104
@@ -1545,7 +1546,7 @@ object Form1: TForm1
     end
     object SpeedButton3: TSpeedButton
       Left = 104
-      Top = 24
+      Top = 32
       Width = 73
       Height = 49
       Hint = 'Consultar clientes cadastrados'
@@ -1575,7 +1576,7 @@ object Form1: TForm1
     end
     object SpeedButton4: TSpeedButton
       Left = 192
-      Top = 24
+      Top = 32
       Width = 73
       Height = 49
       Hint = 'Imitir / imprimir relat'#243'rios de clientes'
@@ -1673,7 +1674,7 @@ object Form1: TForm1
       Caption = '&Cadastro'
       object Clientes1: TMenuItem
         Caption = 'C&lientes'
-        OnClick = Clientes1Click
+        OnClick = btnCadastroClick
       end
     end
     object Consulta1: TMenuItem

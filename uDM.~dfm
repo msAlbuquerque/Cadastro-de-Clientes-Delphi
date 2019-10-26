@@ -2,7 +2,7 @@ object DM: TDM
   OldCreateOrder = False
   Left = 1073
   Top = 116
-  Height = 221
+  Height = 283
   Width = 171
   object Table1: TTable
     Active = True
@@ -102,7 +102,7 @@ object DM: TDM
     end
     object Table1Telefone_Celular: TStringField
       FieldName = 'Telefone_Celular'
-      EditMask = '!\(99\)90000-0000;1;_'
+      EditMask = '!\(99\)00000-0000;1;_'
       Size = 13
     end
   end

@@ -2,10 +2,11 @@ object DM: TDM
   OldCreateOrder = False
   Left = 1073
   Top = 116
-  Height = 221
+  Height = 283
   Width = 171
   object Table1: TTable
     Active = True
+    AfterPost = Table1AfterPost
     DatabaseName = 'Cad_Cli'
     TableName = 'Cad_Cli.db'
     Left = 64

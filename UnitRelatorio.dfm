@@ -16,7 +16,7 @@ object RelCli: TRelCli
   TextHeight = 13
   object QuickRep1: TQuickRep
     Left = 24
-    Top = 40
+    Top = 24
     Width = 794
     Height = 1123
     Frame.Color = clBlack
@@ -1785,7 +1785,7 @@ object RelCli: TRelCli
       object QRDBText4: TQRDBText
         Left = 416
         Top = 16
-        Width = 96
+        Width = 121
         Height = 17
         Frame.Color = clBlack
         Frame.DrawTop = False
@@ -1796,10 +1796,10 @@ object RelCli: TRelCli
           44.979166666666670000
           1100.666666666667000000
           42.333333333333330000
-          254.000000000000000000)
+          320.145833333333300000)
         Alignment = taLeftJustify
         AlignToBand = False
-        AutoSize = True
+        AutoSize = False
         AutoStretch = False
         Color = clWhite
         DataSet = DM.Table1

@@ -4,7 +4,7 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, Menus, StdCtrls, Buttons, ExtCtrls;
+  Dialogs, Menus, StdCtrls, Buttons, ExtCtrls, DBTables;
 
 type
   TForm1 = class(TForm)
@@ -29,7 +29,7 @@ type
     Image1: TImage;
     Bevel3: TBevel;
     Menu: TGroupBox;
-    SpeedButton1: TSpeedButton;
+    btnCadastro: TSpeedButton;
     btnSobre: TSpeedButton;
     SpeedButton3: TSpeedButton;
     SpeedButton4: TSpeedButton;
@@ -43,11 +43,11 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnSobreClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
-    procedure SpeedButton1Click(Sender: TObject);
-    procedure Clientes1Click(Sender: TObject);
+    procedure btnCadastroClick(Sender: TObject);
     procedure SpeedButton4Click(Sender: TObject);
     procedure N20Etiquetas1Click(Sender: TObject);
     procedure N30Etiquetas1Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     
   private
     { Private declarations }
@@ -80,26 +80,22 @@ end;
 
 procedure TForm1.btnSobreClick(Sender: TObject);
 begin
+  AboutBox:= TAboutBox.Create(Self);
   AboutBox.ShowModal;
+  AboutBox.Free;
+  // ou AboutBox.Destroy caso o form tem conexão com o Banco de Dados.
 end;
 
 procedure TForm1.btnSairClick(Sender: TObject);
 begin
-close;
+  close;
 end;
 
-
-
-
-
-procedure TForm1.SpeedButton1Click(Sender: TObject);
+procedure TForm1.btnCadastroClick(Sender: TObject);
 begin
+  Form2:=TForm2.Create(Self);
   Form2.ShowModal;
-end;
-
-procedure TForm1.Clientes1Click(Sender: TObject);
-begin
-  Form2.ShowModal;
+  Form2.Destroy;
 end;
 
 procedure TForm1.SpeedButton4Click(Sender: TObject);
@@ -115,6 +111,12 @@ end;
 procedure TForm1.N30Etiquetas1Click(Sender: TObject);
 begin
   md30.QuickRep1.Preview;  
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  if not Session.IsAlias('Cad_Cli') then
+    Session.AddStandardAlias('Cad_Cli','C:\Users\albuq\Desktop\Projetos Delphi 7\Cadastro Clientes\BD','Paradox');
 end;
 
 end.
