@@ -1,6 +1,6 @@
 object Form2: TForm2
-  Left = 193
-  Top = 104
+  Left = 504
+  Top = 174
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Cadastro de Clientes'

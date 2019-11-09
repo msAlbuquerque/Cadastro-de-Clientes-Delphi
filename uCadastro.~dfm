@@ -1,12 +1,12 @@
 object Form2: TForm2
   Left = 193
-  Top = 117
+  Top = 104
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'Cadastro de Clientes'
-  ClientHeight = 571
+  ClientHeight = 582
   ClientWidth = 867
-  Color = clNavy
+  Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -53,7 +53,7 @@ object Form2: TForm2
     Top = 16
     Width = 833
     Height = 409
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Dados'
@@ -71,7 +71,7 @@ object Form2: TForm2
           Caption = 'Codigo'
           FocusControl = DBEdit1
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -85,7 +85,7 @@ object Form2: TForm2
           Caption = 'Nome'
           FocusControl = DBEdit2
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -99,7 +99,7 @@ object Form2: TForm2
           Caption = 'Data Nascimento'
           FocusControl = DBEdit3
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -113,7 +113,7 @@ object Form2: TForm2
           Caption = 'Endere'#231'o'
           FocusControl = DBEdit4
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -127,7 +127,7 @@ object Form2: TForm2
           Caption = 'Numero'
           FocusControl = DBEdit5
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -141,7 +141,7 @@ object Form2: TForm2
           Caption = 'Complemento'
           FocusControl = DBEdit6
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -155,7 +155,7 @@ object Form2: TForm2
           Caption = 'Bairro'
           FocusControl = DBEdit7
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -169,7 +169,7 @@ object Form2: TForm2
           Caption = 'Cidade'
           FocusControl = DBEdit8
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -182,7 +182,7 @@ object Form2: TForm2
           Height = 16
           Caption = 'Estado'
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -196,7 +196,7 @@ object Form2: TForm2
           Caption = 'CEP'
           FocusControl = DBEdit10
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -210,7 +210,7 @@ object Form2: TForm2
           Caption = 'Telefone Residencial'
           FocusControl = DBEdit11
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -224,7 +224,7 @@ object Form2: TForm2
           Caption = 'Telefone Comercial'
           FocusControl = DBEdit12
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -238,7 +238,7 @@ object Form2: TForm2
           Caption = 'Telefone Celular'
           FocusControl = DBEdit13
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -252,7 +252,7 @@ object Form2: TForm2
           Caption = 'Email'
           FocusControl = DBEdit14
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -266,7 +266,7 @@ object Form2: TForm2
           Caption = 'Site'
           FocusControl = DBEdit15
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -462,7 +462,7 @@ object Form2: TForm2
           Caption = 'CPF'
           FocusControl = DBEdit16
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -476,7 +476,7 @@ object Form2: TForm2
           Caption = 'RG'
           FocusControl = DBEdit17
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -490,7 +490,7 @@ object Form2: TForm2
           Caption = 'CNPJ'
           FocusControl = DBEdit18
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -504,7 +504,7 @@ object Form2: TForm2
           Caption = 'IE'
           FocusControl = DBEdit19
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -518,7 +518,7 @@ object Form2: TForm2
           Caption = 'IM'
           FocusControl = DBEdit20
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -532,7 +532,7 @@ object Form2: TForm2
           Caption = 'Foto'
           FocusControl = DBImage1
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = []
@@ -613,7 +613,7 @@ object Form2: TForm2
           Caption = 'Observa'#231#245'es:'
           FocusControl = DBMemo1
           Font.Charset = DEFAULT_CHARSET
-          Font.Color = clWhite
+          Font.Color = clBlack
           Font.Height = -13
           Font.Name = 'MS Sans Serif'
           Font.Style = [fsBold]
@@ -622,8 +622,8 @@ object Form2: TForm2
         object DBMemo1: TDBMemo
           Left = 24
           Top = 56
-          Width = 737
-          Height = 249
+          Width = 729
+          Height = 145
           DataField = 'Obs'
           DataSource = DM.DataSource1
           TabOrder = 0
@@ -635,10 +635,10 @@ object Form2: TForm2
     Left = 16
     Top = 480
     Width = 833
-    Height = 81
+    Height = 89
     Caption = 'Pesquisas'
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWhite
+    Font.Color = clBlack
     Font.Height = -16
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
@@ -646,12 +646,12 @@ object Form2: TForm2
     TabOrder = 1
     object Label23: TLabel
       Left = 32
-      Top = 24
+      Top = 32
       Width = 44
       Height = 16
       Caption = 'Codigo'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -13
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -659,12 +659,12 @@ object Form2: TForm2
     end
     object Label24: TLabel
       Left = 232
-      Top = 24
+      Top = 32
       Width = 37
       Height = 16
       Caption = 'Nome'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -13
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -672,12 +672,12 @@ object Form2: TForm2
     end
     object Label25: TLabel
       Left = 432
-      Top = 24
+      Top = 32
       Width = 26
       Height = 16
       Caption = 'CPF'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -13
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -685,12 +685,12 @@ object Form2: TForm2
     end
     object Label26: TLabel
       Left = 648
-      Top = 24
+      Top = 32
       Width = 35
       Height = 16
       Caption = 'CNPJ'
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
+      Font.Color = clBlack
       Font.Height = -13
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -698,7 +698,7 @@ object Form2: TForm2
     end
     object SpeedButton1: TSpeedButton
       Left = 160
-      Top = 40
+      Top = 48
       Width = 23
       Height = 25
       Glyph.Data = {
@@ -719,7 +719,7 @@ object Form2: TForm2
     end
     object SpeedButton2: TSpeedButton
       Left = 560
-      Top = 40
+      Top = 48
       Width = 23
       Height = 25
       Glyph.Data = {
@@ -740,7 +740,7 @@ object Form2: TForm2
     end
     object SpeedButton3: TSpeedButton
       Left = 776
-      Top = 40
+      Top = 47
       Width = 20
       Height = 25
       Glyph.Data = {
@@ -761,7 +761,7 @@ object Form2: TForm2
     end
     object Edit1: TEdit
       Left = 32
-      Top = 40
+      Top = 48
       Width = 121
       Height = 24
       Font.Charset = ANSI_CHARSET
@@ -774,7 +774,7 @@ object Form2: TForm2
     end
     object Edit2: TEdit
       Left = 232
-      Top = 40
+      Top = 48
       Width = 121
       Height = 24
       Font.Charset = ANSI_CHARSET
@@ -788,7 +788,7 @@ object Form2: TForm2
     end
     object MaskEdit1: TMaskEdit
       Left = 432
-      Top = 40
+      Top = 48
       Width = 120
       Height = 24
       EditMask = '000\.000\.000\-00;1;_'
@@ -804,7 +804,7 @@ object Form2: TForm2
     end
     object MaskEdit2: TMaskEdit
       Left = 648
-      Top = 40
+      Top = 48
       Width = 120
       Height = 24
       EditMask = '00\.000\.000\/0000\-00;1;_'
