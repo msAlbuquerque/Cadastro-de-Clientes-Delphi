@@ -1,8 +1,8 @@
 object DM: TDM
   OldCreateOrder = False
-  Left = 1073
-  Top = 116
-  Height = 283
+  Left = 1158
+  Top = 172
+  Height = 177
   Width = 171
   object Table1: TTable
     Active = True

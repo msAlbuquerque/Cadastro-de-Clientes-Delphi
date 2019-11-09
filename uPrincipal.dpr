@@ -9,7 +9,9 @@ uses
   UnitRelatorio in 'UnitRelatorio.pas' {RelCli},
   UnitMD20 in 'UnitMD20.pas' {md20},
   UnitMD30 in 'UnitMD30.pas' {md30},
-  UnitConsulta in 'UnitConsulta.pas' {Consulta};
+  UnitConsulta in 'UnitConsulta.pas' {Consulta},
+  UnitFormAuxImp in 'UnitFormAuxImp.pas' {FormAuxImp},
+  UnitForAuxRel in 'UnitForAuxRel.pas' {FormAuxRel};
 
 {$R *.res}
 
@@ -21,5 +23,7 @@ begin
   Application.CreateForm(Tmd20, md20);
   Application.CreateForm(Tmd30, md30);
   Application.CreateForm(TConsulta, Consulta);
+  Application.CreateForm(TFormAuxImp, FormAuxImp);
+  Application.CreateForm(TFormAuxRel, FormAuxRel);
   Application.Run;
 end.

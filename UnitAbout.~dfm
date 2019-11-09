@@ -5,7 +5,7 @@ object AboutBox: TAboutBox
   Caption = 'About'
   ClientHeight = 213
   ClientWidth = 298
-  Color = clSilver
+  Color = clNavy
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -22,7 +22,13 @@ object AboutBox: TAboutBox
     Height = 161
     BevelInner = bvRaised
     BevelOuter = bvLowered
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWhite
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
     ParentColor = True
+    ParentFont = False
     TabOrder = 0
     object ProgramIcon: TImage
       Left = 8
@@ -1445,8 +1451,8 @@ object AboutBox: TAboutBox
     object Comments: TLabel
       Left = 8
       Top = 104
-      Width = 209
-      Height = 41
+      Width = 183
+      Height = 26
       Caption = 'Comments Programa desenvolvido em Delphi 7 - 08/06/2019 '
       WordWrap = True
       IsControl = True

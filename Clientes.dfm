@@ -6,7 +6,7 @@ object Form1: TForm1
   Caption = 'Cadastro de Clientes'
   ClientHeight = 447
   ClientWidth = 444
-  Color = clNavy
+  Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -46,17 +46,11 @@ object Form1: TForm1
   OnCreate = FormCreate
   PixelsPerInch = 96
   TextHeight = 13
-  object Bevel1: TBevel
-    Left = 80
-    Top = 40
-    Width = 281
-    Height = 50
-  end
   object Image1: TImage
-    Left = 160
-    Top = 120
-    Width = 105
-    Height = 105
+    Left = 144
+    Top = 104
+    Width = 161
+    Height = 129
     Picture.Data = {
       07544269746D6170F6AC0000424DF6AC0000000000003604000028000000F000
       0000B40000000100080000000000C0A80000120B0000120B0000000100000000
@@ -1446,24 +1440,10 @@ object Form1: TForm1
     Stretch = True
   end
   object Bevel3: TBevel
-    Left = 128
-    Top = 112
-    Width = 169
-    Height = 121
-  end
-  object Panel1: TPanel
-    Left = 88
-    Top = 48
-    Width = 265
-    Height = 33
-    Caption = 'Cadastro de Clientes'
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clNavy
-    Font.Height = -16
-    Font.Name = 'Consolas'
-    Font.Style = [fsBold]
-    ParentFont = False
-    TabOrder = 0
+    Left = 136
+    Top = 96
+    Width = 177
+    Height = 145
   end
   object Menu: TGroupBox
     Left = 80
@@ -1472,12 +1452,12 @@ object Form1: TForm1
     Height = 177
     Caption = 'Menu'
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clYellow
+    Font.Color = clBlue
     Font.Height = -13
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    TabOrder = 1
+    TabOrder = 0
     object btnCadastro: TSpeedButton
       Left = 16
       Top = 32
@@ -1487,7 +1467,7 @@ object Form1: TForm1
       Caption = 'Cadastro'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1520,7 +1500,7 @@ object Form1: TForm1
       Caption = 'Sobre'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1553,7 +1533,7 @@ object Form1: TForm1
       Caption = 'Consultas'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1584,7 +1564,7 @@ object Form1: TForm1
       Caption = 'Relat'#243'rios'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1615,7 +1595,7 @@ object Form1: TForm1
       Caption = 'Sair'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1646,7 +1626,7 @@ object Form1: TForm1
       Caption = 'Mala Direta'
       Flat = True
       Font.Charset = DEFAULT_CHARSET
-      Font.Color = clLime
+      Font.Color = clBlack
       Font.Height = -11
       Font.Name = 'MS Sans Serif'
       Font.Style = []
@@ -1666,7 +1646,23 @@ object Form1: TForm1
       Layout = blGlyphTop
       NumGlyphs = 2
       ParentFont = False
+      OnClick = SpeedButton6Click
     end
+  end
+  object Panel1: TPanel
+    Left = 80
+    Top = 24
+    Width = 281
+    Height = 41
+    Caption = 'Cadastro de Clientes'
+    Color = clWindow
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlue
+    Font.Height = -23
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
   end
   object MainMenu1: TMainMenu
     Left = 8
@@ -1689,9 +1685,11 @@ object Form1: TForm1
       Caption = '&Relat'#243'rios'
       object OrdemCdigo1: TMenuItem
         Caption = 'Ordem &C'#243'digo'
+        OnClick = OrdemCdigo1Click
       end
       object OrdemAlfabtica1: TMenuItem
         Caption = 'Ordem &Alfab'#233'tica'
+        OnClick = OrdemAlfabtica1Click
       end
     end
     object MalaDireta1: TMenuItem

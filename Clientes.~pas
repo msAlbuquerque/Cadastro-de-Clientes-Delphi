@@ -24,8 +24,6 @@ type
     Etiquetas1: TMenuItem;
     N20Etiquetas1: TMenuItem;
     N30Etiquetas1: TMenuItem;
-    Bevel1: TBevel;
-    Panel1: TPanel;
     Image1: TImage;
     Bevel3: TBevel;
     Menu: TGroupBox;
@@ -39,16 +37,20 @@ type
     Sobre2: TMenuItem;
     if1: TMenuItem;
     F1: TMenuItem;
+    Panel1: TPanel;
     procedure FormCloseQuery(Sender: TObject; var CanClose: Boolean);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure btnSobreClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure btnCadastroClick(Sender: TObject);
-    procedure SpeedButton4Click(Sender: TObject);
     procedure N20Etiquetas1Click(Sender: TObject);
     procedure N30Etiquetas1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnConsultaClick(Sender: TObject);
+    procedure SpeedButton6Click(Sender: TObject);
+    procedure SpeedButton4Click(Sender: TObject);
+    procedure OrdemAlfabtica1Click(Sender: TObject);
+    procedure OrdemCdigo1Click(Sender: TObject);
     
   private
     { Private declarations }
@@ -61,7 +63,8 @@ var
 
 implementation
 
-uses UnitAbout, uCadastro, UnitRelatorio, UnitMD20, UnitMD30, UnitConsulta;
+uses UnitAbout, uCadastro, UnitRelatorio, UnitMD20, UnitMD30, UnitConsulta,
+  UnitFormAuxImp, UnitForAuxRel, uDM;
 
 {$R *.dfm}
 
@@ -99,11 +102,6 @@ begin
   Form2.Destroy;
 end;
 
-procedure TForm1.SpeedButton4Click(Sender: TObject);
-begin
-  RelCli.QuickRep1.Preview;
-end;
-
 procedure TForm1.N20Etiquetas1Click(Sender: TObject);
 begin
   md20.QuickRep1.Preview;
@@ -123,6 +121,28 @@ end;
 procedure TForm1.btnConsultaClick(Sender: TObject);
 begin
   Consulta.ShowModal;
+end;
+
+procedure TForm1.SpeedButton6Click(Sender: TObject);
+begin
+  FormAuxImp.ShowModal;
+end;
+
+procedure TForm1.SpeedButton4Click(Sender: TObject);
+begin
+  FormAuxRel.ShowModal;  
+end;
+
+procedure TForm1.OrdemAlfabtica1Click(Sender: TObject);
+begin
+  DM.Table1.IndexName:= 'iNome';
+  RelCli.QuickRep1.Preview;
+end;
+
+procedure TForm1.OrdemCdigo1Click(Sender: TObject);
+begin
+  DM.Table1.IndexName:= '';
+  RelCli.QuickRep1.Preview;
 end;
 
 end.

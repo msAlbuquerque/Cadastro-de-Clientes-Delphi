@@ -43,6 +43,7 @@ end;
 
 procedure TConsulta.Edit1Change(Sender: TObject);
 begin
+  
   DM.Table1.FindNearest([Edit1.Text]);
 end;
 
